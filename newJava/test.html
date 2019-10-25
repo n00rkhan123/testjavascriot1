@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Check a number is prime or not</title>
+<script type="text/javascript">
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return document.writeln('is prime');  
+  }
+  else if(n === 2)
+  {
+    return document.writeln('is  prime');
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x == 0)
+      {
+        return document.writeln('is not prime');
+      }
+    }
+    
+    return document.writeln('is prime');  
+  }
+}
+document.writeln(test_prime(9));
+
+</script>
+</head>
+<body>
+
+  
+</body>
+</html>
