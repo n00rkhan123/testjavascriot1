@@ -3,36 +3,45 @@
 <head>
 <meta charset=utf-8 />
 <title>Check a number is prime or not</title>
-<script type="text/javascript">
-function test_prime(n)
-{
 
-  if (n===1)
-  {
-    return document.writeln('is prime');  
-  }
-  else if(n === 2)
-  {
-    return document.writeln('is  prime');
-  }else
-  {
-    for(var x = 2; x < n; x++)
+</head>
+<body>
+  <h1>inter any number</h1>
+  <input type="text" name="lname" id="n"><br/>
+  <button id="noor1" onclick="prime()"> click me</button>
+
+
+  
+  
+  <script type="text/javascript">
+    function prime()
     {
-      if(n % x == 0)
+     
+     var a=document.getElementById("n").value 
+    
+      if (a == 1)
       {
-        return document.writeln('is not prime');
+        return alert(a +" The inputed number is Prime");
+      }
+      else if(a == 2)
+      {
+        return window.alert(a+" The inputed number is Prime");
+      }else
+      {
+        for(var x = 2; x < a; x++)
+        {
+          if(a % x == 0)
+          {
+            return window.alert(a +" The inputed number is not Prime");
+          }
+        }
+        
+        return window.alert(a +" The inputed number is Prime");
       }
     }
     
-    return document.writeln('is prime');  
-  }
-}
-document.writeln(test_prime(9));
-
-</script>
-</head>
-<body>
-
+    
+    </script>
   
 </body>
 </html>
